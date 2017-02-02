@@ -1,0 +1,2 @@
+the images for the website are put in this repository.
+NOTE: these images are different from the product images.
