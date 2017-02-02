@@ -1,0 +1,153 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.menu {
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  width: 150px;
+  margin: 20px auto;
+}
+
+h1, h3 {
+  font-family: 'bebas_neueregular';
+  font-weight: 200;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+}
+
+h3 {
+  margin: 5px;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu ul li, .menu span {
+  display: block;
+  width: 150px;
+  height: 40px;
+  padding: 10px 5px;
+  background-color: #f8dbdb; /*drop down mneu items*/
+  color: #fff;
+  border-bottom: 1px solid #b22222;
+  font-family: tahoma;
+  cursor: pointer;
+}
+
+.menu span {
+  background-color: #b22222;/*button color*/
+  border: none;
+  text-align: center;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: border-radius, 0.2s;
+  -o-transition: border-radius, 0.2s;
+  -webkit-transition: border-radius, 0.2s;
+  transition: border-radius, 0.2s;
+}
+
+.menu:hover span {
+  -moz-border-radius: 2px 2px 0 0;
+  -webkit-border-radius: 2px;
+  border-radius: 2px 2px 0 0;
+}
+
+.menu ul li {
+  -moz-transform-origin: top center 0px;
+  -webkit-transform-origin: top center 0px;
+  transform-origin: top center 0px;
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.menu ul li:last-of-type {
+  border: none;
+  -moz-border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 2px 2px;
+}
+
+.menu:hover ul li {
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+.menu ul li:hover {
+  background-color: #FFA500;
+}
+
+.menu:hover ul li:nth-of-type(1) {
+  -moz-transition: -moz-transform 0.1s, opacity 0s 0.1s;
+  -o-transition: -o-transform 0.1s, opacity 0s 0.1s;
+  -webkit-transition: -webkit-transform 0.1s, opacity 0s 0.1s;
+  transition: transform 0.1s, opacity 0s 0.1s;
+}
+
+.menu ul li:nth-of-type(1) {
+  -moz-transition: -moz-transform 0.9s, opacity 0s 1.2s;
+  -o-transition: -o-transform 0.9s, opacity 0s 1.2s;
+  -webkit-transition: -webkit-transform 0.9s, opacity 0s 1.2s;
+  transition: transform 0.9s, opacity 0s 1.2s;
+}
+
+.menu:hover ul li:nth-of-type(2) {
+-moz-transition: -moz-transform 0.2s, opacity 0s 0.2s;
+  -o-transition: -o-transform 0.2s, opacity 0s 0.2s;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0s 0.2s;
+  transition: transform 0.2s, opacity 0s 0.2s;
+}
+
+.menu ul li:nth-of-type(2) {
+  -moz-transition: -moz-transform 0.6s, opacity 0s 0.9s;
+  -o-transition: -o-transform 0.6s, opacity 0s 0.9s;
+  -webkit-transition: -webkit-transform 0.6s, opacity 0s 0.9s;
+  transition: transform 0.6s, opacity 0s 0.9s;
+}
+
+.menu:hover ul li:nth-of-type(3) {
+-moz-transition: -moz-transform 0.3s, opacity 0s 0.3s;
+  -o-transition: -o-transform 0.3s, opacity 0s 0.3s;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0s 0.3s;
+  transition: transform 0.3s, opacity 0s 0.3s;
+}
+
+.menu ul li:nth-of-type(3) {
+  -moz-transition: -moz-transform 0.3s, opacity 0s 0.6s;
+  -o-transition: -o-transform 0.3s, opacity 0s 0.6s;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0s 0.6s;
+  transition: transform 0.3s, opacity 0s 0.6s;
+}
+
+.menu:hover ul li:nth-of-type(4) {
+ -moz-transition: -moz-transform 0.4s, opacity 0s 0.4s;
+  -o-transition: -o-transform 0.4s, opacity 0s 0.4s;
+  -webkit-transition: -webkit-transform 0.4s, opacity 0s 0.4s;
+  transition: transform 0.4s, opacity 0s 0.4s;
+}
+
+.menu ul li:nth-of-type(4) {
+  -moz-transition: -moz-transform 0.0s, opacity 0s 0.3s;
+  -o-transition: -o-transform 0.0s, opacity 0s 0.3s;
+  -webkit-transition: -webkit-transform 0.0s, opacity 0s 0.3s;
+  transition: transform 0.0s, opacity 0s 0.3s;
+}
